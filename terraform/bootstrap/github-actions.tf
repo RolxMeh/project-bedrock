@@ -40,7 +40,7 @@ resource "aws_iam_role" "github_actions" {
           }
 
           StringLike = {
-            "token.actions.githubusercontent.com:sub" = "repo:RolxMeh@95518486/project-bedrock@1332954211:ref:refs/heads/main"
+            "token.actions.githubusercontent.com:sub" = "repo:RolxMeh@95518486/project-bedrock@1332954211:*"
           }
         }
       }
