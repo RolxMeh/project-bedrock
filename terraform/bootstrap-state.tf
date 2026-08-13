@@ -1,0 +1,9 @@
+data "terraform_remote_state" "bootstrap" {
+  backend = "s3"
+
+  config = {
+    bucket = "project-bedrock-tf-state-405872562779"
+    key    = "bootstrap/terraform.tfstate"
+    region = var.aws_region
+  }
+}

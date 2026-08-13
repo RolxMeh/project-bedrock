@@ -51,3 +51,8 @@ variable "aws_region" {
   description = "AWS region"
   type        = string
 }
+
+variable "github_actions_role_arn" {
+  description = "IAM role assumed by GitHub Actions"
+  type        = string
+}
