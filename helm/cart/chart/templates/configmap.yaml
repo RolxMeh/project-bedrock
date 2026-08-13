@@ -1,0 +1,12 @@
+{{- if .Values.configMap.create -}}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "carts.configMapName" . }}
+data:
+  RETAIL_CART_PERSISTENCE_PROVIDER: {{ .Values.app.persistence.provider }}
+  {{- if (eq "dynamodb" .Values.app.persistence.provider) }}
+  RETAIL_CART_PERSISTENCE_DYNAMODB_TABLE_NAME: {{ .Values.app.persistence.dynamodb.tableName }}
+  RETAIL_CART_PERSISTENCE_DYNAMODB_CREATE_TABLE: "{{ .Values.app.persistence.dynamodb.createTable }}"
+  {{- end }}
+  {{- end }}
