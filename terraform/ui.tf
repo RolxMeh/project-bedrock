@@ -1,7 +1,7 @@
 resource "helm_release" "ui" {
   name      = "ui"
   namespace = "retail-app"
-  chart     = "${path.module}/../../retail-store-sample-app/src/ui/chart"
+  chart     = "${path.module}/../helm/ui/chart"
 
   create_namespace = true
 
