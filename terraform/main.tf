@@ -24,6 +24,8 @@ module "eks" {
 
   project_tag = var.project_tag
 
+  github_actions_role_arn = data.terraform_remote_state.bootstrap.outputs.github_actions_role_arn
+
   node_instance_type = "t3.small"
   node_desired_size  = 2
   node_min_size      = 2
