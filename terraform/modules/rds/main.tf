@@ -66,8 +66,7 @@ resource "aws_db_instance" "this" {
 
   publicly_accessible = false
 
-  # change this back to 7
-  backup_retention_period = 1
+  backup_retention_period = 7
   backup_window           = "03:00-04:00"
 
   deletion_protection = true
