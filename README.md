@@ -809,7 +809,7 @@ https://github.com/RolxMeh/project-bedrock
 - [x] CloudWatch Observability add-on is installed
 - [x] CloudWatch agents/DaemonSets are running
 - [x] Application/container logs are available in CloudWatch
-- [x] Cluster log retention is configured to 7 days
+- [x] Cluster log retention is configured to 1 day
 
 ### Developer Access
 
