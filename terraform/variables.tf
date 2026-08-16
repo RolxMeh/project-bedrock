@@ -42,3 +42,9 @@ variable "mysql_password" {
   type        = string
   sensitive   = true
 }
+
+variable "budget_alert_email" {
+  description = "Email address for AWS Budget alerts"
+  type        = string
+  sensitive   = true
+}
