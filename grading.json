@@ -7,7 +7,7 @@
   "cluster_endpoint": {
     "sensitive": false,
     "type": "string",
-    "value": "https://8710D901D011302FC6CF35DD2299EBA4.gr7.us-east-1.eks.amazonaws.com"
+    "value": "https://92F22CEBE7989EDE97086164A6DE8973.gr7.us-east-1.eks.amazonaws.com"
   },
   "cluster_name": {
     "sensitive": false,
